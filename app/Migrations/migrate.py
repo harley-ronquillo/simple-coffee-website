@@ -4,6 +4,7 @@ from app.Migrations.UserMigration import users
 from app.Config.db import engine, meta
 
 def migrate():
+    meta.drop_all(engine)
     meta.create_all(engine)
     print("Migration completed successfully.")
 
