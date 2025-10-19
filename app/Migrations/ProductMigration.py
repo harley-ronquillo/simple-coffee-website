@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, String, Table, ForeignKey, Text
-from app.Config.db import meta
+from app.Config import meta
 
 products = Table(
     "products", meta,

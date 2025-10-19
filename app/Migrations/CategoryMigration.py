@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, String, Table
-from app.Config.db import meta
+from app.Config import meta
 
 categories = Table(
     "categories", meta,

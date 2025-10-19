@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, String, Table
-from app.Config.db import meta, engine
+from app.Config import meta, engine
 
 users = Table(
     "users", meta,
